@@ -11,7 +11,7 @@
 <h2 align="center">The easiest way to deploy mah bot! is click on the image below</h2>
 
 ### The Easy Way
-[![Deploy To Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/CyberBoyAyush/MissTina)
+[![Deploy To Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Anonymous5945/groupbot)
 
 ### Credits
 * @TechnoAyanOfficial For Basic Code
