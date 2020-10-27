@@ -11,8 +11,8 @@ class Config(object):
 
     # REQUIRED
     API_KEY = ""
-    OWNER_ID = "594813047" # If you dont know, run @MissRose_bot and do /id in pm
-    OWNER_USERNAME = "refundisillegal"
+    OWNER_ID = "395357593" # If you dont know, run @MissRose_bot and do /id in pm
+    OWNER_USERNAME = "inferno59"
 
     # RECOMMENDED
     SQLALCHEMY_DATABASE_URI = 'sqldbtype://username:pw@hostname:port/db_name'  # needed for any database modules
@@ -32,7 +32,7 @@ class Config(object):
     DEL_CMDS = False  # Whether or not you should delete "blue text must click" commands
     STRICT_GBAN = False
     WORKERS = 8  # Number of subthreads to use. This is the recommended amount - see for yourself what works best!
-    BAN_STICKER = 'CAADAgADOwADPPEcAXkko5EB3YGYAg'  # banhammer marie sticker
+    BAN_STICKER = 'AgACAgUAAxkBAAEGNL1fcV6NxJM8eTEr7-vGgfuOGwLSVAACUqoxG8m4iVeZzj7VNx-I_TCLZWx0AAMBAAMCAANtAAM4cAIAARsE'  # banhammer marie sticker
     KICK_STICKER = False # StickerId while /kick ,same as BAN_STICKER
     ALLOW_EXCL = False  # Allow ! commands as well as /
     API_OPENWEATHER = False #Get API_OPENWEATHER FROM OFFICAL SITE https://da.gd/VAW3
