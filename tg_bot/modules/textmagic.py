@@ -27,9 +27,7 @@ def weebify(bot: Bot, update: Update, args: List[str]):
         message.reply_text(string)
 
 
-__help__ = """
- Originally Made By [Ayan Ansari](t.me/TechnoAyanOfficial)
- 
+__help__ = """ 
  - /blackout <text>: Apply Blackout Style to your text
  """
 
