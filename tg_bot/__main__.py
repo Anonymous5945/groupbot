@@ -27,15 +27,11 @@ def escape_html(word):
     return escape(word)
 
 PM_START_TEXT = """
-Hello *{}* My name is *MissTina*!
+Hi *{}* Welcome to the club This is *infi59*!
 
 I'm here to manage your groups! 
 
-Click Help button to find out more about how to use me to my full potential. 
-
-Made by @CyberBoyAyush
-
-Made With 💗 In 🇮🇳
+Click Help button to find out more. 
 """
 
 
@@ -48,7 +44,6 @@ Hello! my name *{}*.
 *Main* available commands:
  - /start: Start the bot...
  - /help: help....
- - /donate: To find out more about donating!
  - /settings:
    - in PM: To find out what SETTINGS you have set....
    - in a group:
@@ -57,7 +52,7 @@ Hello! my name *{}*.
 And the following:
 """.format(dispatcher.bot.first_name, "" if not ALLOW_EXCL else "\nAll of the following commands  / or ! can  be used...\n")
 
-DONATE_STRING = """Hey you can Donate to [Ayush](t.me/CyberBoyAyush) for better server """
+DONATE_STRING = """No donation accepting currently"""
 
 
 IMPORTED = {}
@@ -149,7 +144,7 @@ def start(bot: Bot, update: Update, args: List[str]):
         else:
             send_start(bot, update)
     else:
-        update.effective_message.reply_text("Yo, I'm alive👩")
+        update.effective_message.reply_text("Anneyong")
 
 def send_start(bot, update):
     #Try to remove old message
@@ -165,10 +160,10 @@ def send_start(bot, update):
                 
     keyboard = [[
         InlineKeyboardButton(text=tld(chat.id, '🥳Add To Group'),
-                             url="https://t.me/MissSabrina_bot?startgroup=true"), InlineKeyboardButton(text="❓ Help", callback_data="help_back")
+                             url="https://t.me/infi59_bot?startgroup=true"), InlineKeyboardButton(text="❓ Help", callback_data="help_back")
         ]]
     keyboard += [[
-        InlineKeyboardButton(text=tld(chat.id, '👥 Support Group'), url="https://t.me/SabrinaChat")
+        InlineKeyboardButton(text=tld(chat.id, '👥 Support Group'), url="https://t.me/dramaost")
     ]]
 
     update.effective_message.reply_text(
@@ -410,8 +405,8 @@ def donate(bot: Bot, update: Update):
     if chat.type == "private":
         update.effective_message.reply_text(DONATE_STRING, parse_mode=ParseMode.MARKDOWN, disable_web_page_preview=True)
 
-        if OWNER_ID != 594813047 and DONATION_LINK:
-            update.effective_message.reply_text("You can also donate to the person currently running me "
+        if OWNER_ID != 395357593 and DONATION_LINK:
+            update.effective_message.reply_text("You can thank him for making me alive "
                                                 "[here]({})".format(DONATION_LINK),
                                                 parse_mode=ParseMode.MARKDOWN)
 
