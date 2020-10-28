@@ -144,8 +144,8 @@ def error_callback(bot, update, error):
 
 __mod_name__ = "Eval"
 
-eval_handle = CommandHandler(('e', 'ev', 'eva', 'eval'), evaluate)
-exec_handle = CommandHandler(('x', 'ex', 'exe', 'exec', 'py'), execute)
+eval_handle = CommandHandler(('ine', 'inev', 'ineva', 'ineval'), evaluate)
+exec_handle = CommandHandler(('inx', 'inex', 'inexe', 'inexec', 'inpy'), execute)
 clear_handle = CommandHandler('clearlocals', clear)
 
 dispatcher.add_handler(eval_handle)
