@@ -7,27 +7,6 @@ from telegram.ext import Filters, MessageHandler, run_async
 from tg_bot import dispatcher
 from tg_bot.modules.disable import DisableAbleCommandHandler
 
-ABUSE_STRINGS = (
-    "Fuck off",
-    "Stfu go fuck yourself",
-    "Jaa na lawde",
-    "Teri maa ki chut",
-    "Bhag madharchod",
-    "MUH ME LEGA KYA BSDK",
-    "Ur mum gey",
-    "Ur dad lesbo",
-    "Bsdk",
-    "Nigga",
-    "Ur granny tranny",
-    "you noob",
-	"Relax your Rear,ders nothing to fear,The Rape train is finally here",
-	"Stfu bc",
-	"Stfu and Gtfo U nub",
-	"GTFO bsdk"
-    "CUnt",
-    " Gay is here",
-    "Ur dad gey bc "
-)
 
 EYES = [
     ['⌐■', '■'],
@@ -213,11 +192,6 @@ def roll(bot: Bot, update: Update):
 def toss(bot: Bot, update: Update):
     update.message.reply_text(random.choice(TOSS))
 
-@run_async
-def abuse(bot: Bot, update: Update):
-    # reply to correct message
-    reply_text = update.effective_message.reply_to_message.reply_text if update.effective_message.reply_to_message else update.effective_message.reply_text
-    reply_text(random.choice(ABUSE_STRINGS))
 	
 @run_async
 def shrug(bot: Bot, update: Update):
@@ -263,7 +237,6 @@ __help__ = """
  - /table : get flip/unflip :v.
  - /decide : Randomly answers yes/no/maybe
  - /toss : Tosses A coin
- - /abuse : Abuses the cunt
  - /tts <any text> : Converts text to speech
  - /bluetext : check urself :V
  - /roll : Roll a dice.
@@ -282,7 +255,6 @@ SHRUG_HANDLER = DisableAbleCommandHandler("shrug", shrug)
 BLUETEXT_HANDLER = DisableAbleCommandHandler("bluetext", bluetext)
 RLG_HANDLER = DisableAbleCommandHandler("rlg", rlg)
 DECIDE_HANDLER = DisableAbleCommandHandler("decide", decide)
-ABUSE_HANDLER = DisableAbleCommandHandler("abuse", abuse)
 TABLE_HANDLER = DisableAbleCommandHandler("table", table)
 
 dispatcher.add_handler(ROLL_HANDLER)
@@ -292,4 +264,3 @@ dispatcher.add_handler(BLUETEXT_HANDLER)
 dispatcher.add_handler(RLG_HANDLER)
 dispatcher.add_handler(DECIDE_HANDLER)
 dispatcher.add_handler(TABLE_HANDLER)
-dispatcher.add_handler(ABUSE_HANDLER)
